@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="536.0" prefWidth="685.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kulb_csd214lab3.employeecontroller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Pane prefHeight="496.0" prefWidth="645.0">
+            <children>
+                <TableView fx:id="tableView" layoutX="8.0" layoutY="41.0" prefHeight="135.0" prefWidth="628.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="170.66665077209473" text="Id" />
+                        <TableColumn fx:id="name" prefWidth="167.99998474121094" text="Name" />
+                        <TableColumn fx:id="address" prefWidth="148.66668701171875" text="Address" />
+                        <TableColumn fx:id="salary" prefWidth="159.33334350585938" text="Salary" />
+                    </columns>
+                </TableView>
+                <Button layoutX="284.0" layoutY="380.0" mnemonicParsing="false" onAction="#Hellobutton" text="Fetch" />
+                <Button layoutX="8.0" layoutY="430.0" mnemonicParsing="false" onAction="#InsertData" text="Insert" />
+                <Button layoutX="180.0" layoutY="430.0" mnemonicParsing="false" onAction="#UpdateData" text="Update" />
+                <Button layoutX="371.0" layoutY="430.0" mnemonicParsing="false" onAction="#DeleteData" text="Delete" />
+                <Button layoutX="561.0" layoutY="430.0" mnemonicParsing="false" onAction="#LoadData" text="Load" />
+                <Button layoutX="561.0" layoutY="430.0" mnemonicParsing="false" onAction="#BackButton" text="Back" />
+
+                <TextField fx:id="iid" layoutX="54.0" layoutY="206.0" prefHeight="25.0" prefWidth="492.0" promptText="Id" />
+                <TextField fx:id="iname" layoutX="54.0" layoutY="248.0" prefHeight="25.0" prefWidth="492.0" promptText="Name" />
+                <TextField fx:id="iaddress" layoutX="54.0" layoutY="289.0" prefHeight="25.0" prefWidth="492.0" promptText="Address" />
+                <TextField fx:id="isalary" layoutX="54.0" layoutY="329.0" prefHeight="25.0" prefWidth="492.0" promptText="Salary" />
+
+
+            </children>
+        </Pane>
+    </children>
+</VBox>
